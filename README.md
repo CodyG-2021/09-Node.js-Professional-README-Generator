@@ -28,3 +28,6 @@ The last section of a high-quality README file is the license. This lets other d
 
 ## License
 ![badge](https://img.shields.io/badge/license-${questions.license}-brightgreen)
+
+
+![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)

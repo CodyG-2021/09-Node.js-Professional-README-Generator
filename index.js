@@ -1,10 +1,12 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
 const inquirer = require('inquirer');
+const Choices = require('inquirer/lib/objects/choices');
 const generateMarkdown = require('./generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
-const questions = [	{
+const questions = [
+	{
 		type: 'input',
 		name: 'title',
 		message: 'What is the title of your project?',
@@ -16,13 +18,22 @@ const questions = [	{
 		- What was your motivation?\
 		- Why did you build this project?\
 		- What problem does it solve?\
-		- What did you learn?',
+		- What did you learn?'
+	},
+	{
+		type: 'input',
+		name: 'tableOfContents',
+		message: ''
+	},
+	{
+		type: 'input',
+		name: 'installation',
+		message: '',
 	},
 	{
 		type: 'input',
 		name: 'instructions',
-		message: 'What are the steps required to install your project?\
-		Provide a step-by-step description of how to get the development environment running.',
+		message: '',
 	},
 	{
 		type: 'input',
@@ -30,15 +41,27 @@ const questions = [	{
 		message: 'What is your usage information?',
 	},
 	{
-		type: 'input',
-		name: 'description',
-		message: 'What is your projects description?',
+		type: 'list',
+		name: 'license',
+		message: 'What lisence do you want to use?',
 	},
 	{
 		type: 'input',
-		name: 'description',
-		message: 'What is your projects description?'
-	}];
+		name: 'contributing',
+		message: '',
+		choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0']
+	},
+	{
+		type: 'input',
+		name: 'tests',
+		message: ''
+	},
+	{
+		type: 'input',
+		name: 'questions',
+		message: ''
+	},
+];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -47,7 +70,9 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-	inquirer.prompt(questions).then(response => {
+	inquirer
+	.prompt(questions)
+	.then(res => {
 		writeToFile('README.md', generateMarkdown({...responses}))
 	})
 };

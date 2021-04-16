@@ -9,58 +9,53 @@ const questions = [
 	{
 		type: 'input',
 		name: 'title',
-		message: 'What is the title of your project?',
+		message: 'What is the title of your project?\n- Something thoughtful that really captures the idea of your project.\n',
 	},
 	{
 		type: 'input',
 		name: 'description',
-		message: 'What is the des of your project?',
+		message: 'Provide a short description of the project, use the following as guides:\n- What is your motivation?\n- Why was this project built?\n- What problem does it solve?\n- What did you learn?\n',
 	},
 	{
 		type: 'input',
 		name: 'installation',
-		message: 'What is the installation of your project?',
-	},
-	{
-		type: 'input',
-		name: 'instructions',
-		message: 'What is the instructions of your project?',
+		message: 'What are the required steps to install the project?\n',
 	},
 	{
 		type: 'input',
 		name: 'usage',
-		message: 'What is your usage information?',
+		message: 'How do you use this project?\n- Provide instructions and examples.\n',
 	},
 	{
 		type: 'list',
 		name: 'license',
-		message: 'What licence do you want to use?',
+		message: 'Which license do you want to use from the following:\n',
 		choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'LGPL-3.0', 'MIT', 'Mozilla Public 2.0', 'CDDL-1.0', 'EPL-2.0'],
 	},
 	{
 		type: 'input',
 		name: 'contributors',
-		message: 'What contributing do you want to use?',
+		message: 'Who contributed to this project?\n',
 	},
 	{
 		type: 'input',
 		name: 'tests',
-		message: 'What tests do you want to use?',
+		message: 'What are the test instructions for the project, if any?\n',
 	},
 	{
 		type: 'input',
 		name: 'questions',
-		message: 'What questions do you want to use?',
+		message: 'What questions do you want answered about the project?\nThink of this as being open-ended allowing users to help you out in the future.\n',
 	},
 	{
 		type: 'input',
 		name: 'github',
-		message: 'What github do you want to use?',
+		message: 'What github do you want to use?\n- Make sure to spell it correctly!\n',
 	},
 	{
 		type: 'input',
 		name: 'email',
-		message: 'What email do you want to use?',
+		message: 'What is your email address?\n',
 	}
 ];
 

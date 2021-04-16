@@ -1,8 +1,9 @@
 
-# sfdsa
+# README Generator
 
 ## Description
-fdsa
+
+For stuff
 
 ## Table of Contents
 - [Description](#description)
@@ -15,27 +16,35 @@ fdsa
 - [Contact](#contact)
 
 ## Installation
-fdsa
+
+index node
 
 ## Usage
-asdf
+
+dsa
 
 ## License
 
-![License](https://img.shields.io/badge/License-CDOL_1_0-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-[CDDL-1.0](https://opensource.org/licenses/CDDL-1.0)
+Source link for [MIT](https://opensource.org/licenses/MIT)
 
 
 ## Contributors
-fdsa
+
+Cody Gallagher
 
 ## Tests
-dfsa
+
+play
 
 ## Questions
-fdsa
+
+what?
 
 ## Contact
-asdf
-asdf
+
+[GitHub Profile](https://github.com/CodyG-2021)
+
+[Email Me](gallagher2021@gmail.com)
+

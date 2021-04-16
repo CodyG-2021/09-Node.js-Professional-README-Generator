@@ -91,6 +91,7 @@ ${renderLicenseLink(license)}
 # ${data.title}
 
 ## Description
+
 ${data.description}
 
 ## Table of Contents
@@ -104,25 +105,33 @@ ${data.description}
 - [Contact](#contact)
 
 ## Installation
+
 ${data.installation}
 
 ## Usage
+
 ${data.usage}
 
 ${renderLicenseSection(data.license)}
 
 ## Contributors
+
 ${data.contributors}
 
 ## Tests
+
 ${data.tests}
 
 ## Questions
+
 ${data.questions}
 
 ## Contact
-${data.github}
-${data.email}
+
+[GitHub Profile](https://github.com/${data.github})
+
+[Email Me](${data.email})
+
 `
 };
 

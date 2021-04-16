@@ -14,26 +14,17 @@ const questions = [
 	{
 		type: 'input',
 		name: 'description',
-		message: 'Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:\
-		- What was your motivation?\
-		- Why did you build this project?\
-		- What problem does it solve?\
-		- What did you learn?'
-	},
-	{
-		type: 'input',
-		name: 'tableOfContents',
-		message: ''
+		message: 'What is the des of your project?'
 	},
 	{
 		type: 'input',
 		name: 'installation',
-		message: '',
+		message: 'What is the installation of your project?',
 	},
 	{
 		type: 'input',
 		name: 'instructions',
-		message: '',
+		message: 'What is the instructions of your project?',
 	},
 	{
 		type: 'input',
@@ -43,29 +34,42 @@ const questions = [
 	{
 		type: 'list',
 		name: 'license',
-		message: 'What lisence do you want to use?',
+		message: 'What licence do you want to use?',
+		choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
 	},
 	{
 		type: 'input',
-		name: 'contributing',
-		message: '',
-		choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0']
+		name: 'contributors',
+		message: 'What contributing do you want to use?',
+		
 	},
 	{
 		type: 'input',
 		name: 'tests',
-		message: ''
+		message: 'What tests do you want to use?'
 	},
 	{
 		type: 'input',
 		name: 'questions',
-		message: ''
+		message: 'What questions do you want to use?'
+	},
+	{
+		type: 'input',
+		name: 'github',
+		message: 'What github do you want to use?'
+	},
+	{
+		type: 'input',
+		name: 'email',
+		message: 'What email do you want to use?'
 	},
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-	return fs.writeFileSync(`./${fileName}.md`, data)
+	return fs.writeFile(`${fileName}`, data), (err) => {
+		err ? console.log(err) : console.log('Check out your README!');
+	}
 }
 
 // TODO: Create a function to initialize app
@@ -73,7 +77,7 @@ function init() {
 	inquirer
 	.prompt(questions)
 	.then(res => {
-		writeToFile('README.md', generateMarkdown({...responses}))
+		writeToFile('README.md', generateMarkdown(res.data))
 	})
 };
 

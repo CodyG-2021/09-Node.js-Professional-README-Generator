@@ -35,7 +35,7 @@ const questions = [
 		type: 'list',
 		name: 'license',
 		message: 'What licence do you want to use?',
-		choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'GNU AGPLv3.0', 'GNU GPLv2.0', 'GNU GPLv3.0', 'MIT', 'Mozilla Public 2.0'],
+		choices: ['Apache 2.0', 'BSD 2-Clause', 'BSD 3-Clause', 'LGPL-3.0', 'MIT', 'Mozilla Public 2.0', 'CDDL-1.0', 'EPL-2.0'],
 	},
 	{
 		type: 'input',

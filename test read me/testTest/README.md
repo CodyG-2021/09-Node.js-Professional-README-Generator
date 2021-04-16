@@ -33,24 +33,18 @@ The last section of a high-quality README file is the license. This lets other d
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-`[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)`
+![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 
-`[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
-      break;
-    case 'GNU AGPLv3.0':
-      licenseBadge = `[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)`;
-      break;
-    case 'GNU GPLv2.0':
-      licenseBadge = `[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)`;
-      break;
-    case 'GNU GPLv3.0':
-      licenseBadge = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
-      break;
-    case 'MIT':
-      licenseBadge = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)
 
-`[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
-      break;
-    default:
-      break;
-  }
+![License](https://img.shields.io/badge/License-BSD%302--Clause-orange.svg)
+
+![License](https://img.shields.io/badge/License-lgpl_3_0--Clause-blue.svg)
+
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+![License](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)
+
+![License](https://img.shields.io/badge/License-CDOL_1_0-blue.svg)
+
+![License](https://img.shields.io/badge/License-EPL_2_0-blue.svg)
